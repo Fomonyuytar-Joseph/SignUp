@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title> Parent Login and registration form </title>
+    <link rel = "stylesheet" href = "css.css">
+</head>
+<body>
+    <div class = "hero">
+        <div class = "form-box">
+            <div class = "button-box">
+                <div id = "button"></div>
+                <button type = "button" class = "toggle-button" onclick = "login()"> Log In </button>
+                <button type = "button" class = "toggle-button" onclick = "register()"> Register </button>
+            </div>
+        <div class = "social-icons">
+            <img src = "google.png">
+            <img src = "facebook.png">
+            <img src = "twitter.png">
+            <img src = "iCloud.jpg">
+        </div>
+            <form id = "login" class = "input-group">
+                <input type = "text" class = "input-field" placeholder = "Full Name" required>
+                <input type = "text" class = "input-field" placeholder = "Email Address" required>
+                <input type = "text" class = "input-field" placeholder = "Password" required>
+                <input type = "checkbox" class = "check-box"> <span> Remember Password </span>
+                <button type = "submit" class = "submit-button"> Log In As Parent </button>
+            </form>
+            <form id = "register" class = "input-group" action = "php.php" method = "POST">
+                <input type = "text" class = "input-field" placeholder = "Full Name" required>
+                <input type = "text" class = "input-field" placeholder = "Email Address" required>
+                <input type = "text" class = "input-field" placeholder = "Password" required>
+                <input type = "text" class = "input-field" placeholder = "Re-Enter Password" required>
+                <input type = "checkbox" class = "check-box"> <span> I Agree to the Terms and Conditions </span>
+                <button type = "submit" class = "submit-button"> Create Account As Parent </button>
+            </form>
+            <div class = "logo">
+                <img src = "contritok.jpg">
+            </div>
+         </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("button");
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+        function register() {
+            x.style.left = "400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+    }
+
+    </script>
+
+
+
+
+
+</body>
+</html>
